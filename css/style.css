@@ -131,7 +131,6 @@ legend{
    
    padding-top:90px;
    height:100%;
-   background-image:url('../img/texture.jpg');
     background-size: 100% 105%;
 
 }
@@ -157,4 +156,7 @@ legend{
 .list-group-item:first-child {
 border-top-left-radius: 0px; 
 border-top-right-radius: 0px;
+}
+.containerP{
+background:url(../img/bg.jpg);
 }

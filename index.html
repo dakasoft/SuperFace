@@ -10,12 +10,12 @@
 
 
 <body ng-controller="BooksController as library"  ng-init="showme=true">
-<div class="containerP" ng-style="myStyle">
+<div class="containerP">
 <div class="logInBox" ng-show ="showme">
     <legend><h1>Superface</h1></legend>
 	  
 	    <p>Log in</p>
-       <form role="form" method="post" action="" ng-show ="showme"  ng-submit ="showme = !showme ;myStyle={background:'url(img/bg.jpg)'}">
+       <form role="form" method="post" action="" ng-show ="showme"  ng-submit ="showme = !showme">
         <div class="form-group">
          <label class="sr-only" for="user">User</label>
          <input type="text" class="form-control" id="user"placeholder="Introduce tu usuario" required></div>
