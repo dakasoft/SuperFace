@@ -15,7 +15,7 @@
     <legend><h1>Superface</h1></legend>
 	  
 	    <p>Log in</p>
-       <form role="form" method="post" action="" ng-show ="showme"  ng-submit ="showme = !showme ;myStyle={background:'none'}">
+       <form role="form" method="post" action="" ng-show ="showme"  ng-submit ="showme = !showme ;myStyle={background:'url(img/bg.jpg)'}">
         <div class="form-group">
          <label class="sr-only" for="user">User</label>
          <input type="text" class="form-control" id="user"placeholder="Introduce tu usuario" required></div>
@@ -41,12 +41,6 @@
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
 				<a class="navbar-brand" target="_blank" data-toggle="modal" data-target=".bs-modal-lg-1" href="#"><img class="fotoPQ" src="img/fotoPerfil.jpg" alt=""></a>
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -102,7 +96,7 @@
 						<img class="img-responsive" ng-src="{{books.img}}">
 					</a>
 					<ul class="list-group">
-						<li class="list-group-item" ng-repeat="comentario in books.comentario">{{comentario}}</li>
+						<li class="list-group-item" ng-repeat="comentario in books.comentario">- "{{comentario}}"</li>
 					</ul>
 					<div ng-show="show">
 
@@ -134,7 +128,7 @@
 										<!-- Text input-->
 										<div class="form-group">
 										  <label for="descripcion">Descripcion</label>  
-										  <input id="descripcion" name="descripcion" type="text" ng-model="imgCtrl.foto.descripcion" class="form-control" placeholder="Descripcion" required>				    
+										  <input id="descripcion" name="descripcion" type="text" ng-model="imgCtrl.foto.comentario[0]" class="form-control" placeholder="Descripcion" required>				    
 										<div class="form-group">
 										  <label for="imagen">Imagen</label>  
 										  <input id="imagen" name="imagen" type="text" ng-model="imgCtrl.foto.img" class="form-control" placeholder="img/imagen.png" required>				    

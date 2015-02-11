@@ -60,10 +60,12 @@ button:hover, button:focus {
 .clear{
 	clear:both;
 }
-#bookForm{
-	padding: 20px 60px 20px 60px;
-}
 
+.navbar-inverse{
+  background-color:black;
+   opacity: 0.9;
+    box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.15);
+}
 
 
 /*foto de perfil*/
@@ -87,12 +89,16 @@ a{
 }
 
 .masFotos{
-	width: 150px;
+	
+	  opacity: 0.4;
+	position:absolute;
+	right:20px;
+	width: 80px;
 	cursor: pointer;
 }
 
 .masFotos:hover{
-	width: 152px;
+      opacity: 0.8;
 }
 
 .logInBox {
@@ -134,17 +140,19 @@ legend{
 	 -webkit-border-radius: 6px 6px 0 0;
   -moz-border-radius:6px 6px 0 0;
   border-radius: 6px 6px 0 0;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.25);
+
    width: 80%;
    height:40%;
 }
 .list-group{
+	border:1px solid white  ; opacity: 0.9;
 	 width: 80%;
 	 -webkit-border-radius:0 0 6px 6px ;
   -moz-border-radius:0 0 6px 6px;
   border-radius:0 0 6px 6px;
-  -webkit-box-shadow: 1px 1px 8px 10px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 1px 1px 8px 10px rgba(0, 0, 0, 0.35);
-  box-shadow: 1px 1px 8px 10px rgba(0, 0, 0, 0.35);
+  font-style: oblique;
+  
 }
 .list-group-item:first-child {
 border-top-left-radius: 0px; 
