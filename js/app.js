@@ -59,18 +59,23 @@ app.controller('SuperController',function($scope){
     this.currentUser = {};
     
     this.addComentario =  function(pPhoto){
+        if (this.comentario) {
         pPhoto.comments.push(this.comentario);
         this.comentario = '';
+        } else {
+            return false;
+        }
     }
 });
 
 app.controller("NewImgController",function(){
     this.addFoto = function(pPhotoAlbum) {
+        this.foto.comments = [];
         pPhotoAlbum.push(this.foto);
         console.log(this.foto);
         //$('.modal').modal('hide')
+    this.foto = {};
     };
-    this.foto ={};
 });
 
 })();
