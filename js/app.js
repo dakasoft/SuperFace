@@ -29,8 +29,7 @@ app.controller("NewImgController",function(){
 	this.foto ={};
 		this.addFoto = function(library) {
 		  library.books.push(this.foto);
-		  console.log(this.foto);
-		  //$('.modal').modal('hide')
+		  this.foto ={};
 	};
 });
 
@@ -54,23 +53,23 @@ var books =[
 
 {
 	comentario: [
-	'lindo',
-	'lindisimo'
+	'linda cuidad',
+	'cuidad gótica ya no es la misma de antes'
 	],
-	descripcion:"",
+	descripcion:"Aqui en gótica",
 	img:'img/batman.jpg'
 },
 {
 	comentario: [
-	'feo',
-	'feisimo'
+	'Eres el peor superheroe',
+	'Donde conseguiste ese anillo'
 	],
-	descripcion:"",
+	descripcion:"Pegando Porte",
 	img:'img/linterna.jpg'
 },
 {
 	comentario: [
-	'asqueroso',
+	'Tomaron esta foto con flash?',
 	'noob'
 	],
 	descripcion:"",
