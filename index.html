@@ -10,11 +10,12 @@
 
 
 <body ng-controller="BooksController as library"  ng-init="showme=true">
-
+<div class="containerP" ng-style="myStyle">
 <div class="logInBox" ng-show ="showme">
-	    <h1>Superface</h1>
+    <legend><h1>Superface</h1></legend>
+	  
 	    <p>Log in</p>
-       <form role="form" method="post" action="" ng-show ="showme"  ng-submit ="showme = !showme">
+       <form role="form" method="post" action="" ng-show ="showme"  ng-submit ="showme = !showme ;myStyle={background:'none'}">
         <div class="form-group">
          <label class="sr-only" for="user">User</label>
          <input type="text" class="form-control" id="user"placeholder="Introduce tu usuario" required></div>
@@ -33,9 +34,9 @@
 
 
 
-   <div class=""  ng-hide ="showme">
+   <div class="principalC"  ng-hide ="showme">
 		
-<body ng-controller="BooksController as library">
+<div ng-controller="BooksController as library">
 	<!-- Navigation -->
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
@@ -152,10 +153,11 @@
 	<script src="js/angular.min.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-</body>
+</div>
 
 	</div>
 	<!-- /.container -->
+</div>
 	<script src="js/jquery.js"></script>
 	<script src="js/angular.min.js"></script>
 	<script src="js/app.js"></script>
