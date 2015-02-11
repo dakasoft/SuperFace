@@ -98,6 +98,16 @@
 				<a ng-click="toggleComments = !toggleComments" ng-init="toggleComments = false; toggleAddComment = false">
 					<img class="img-responsive" ng-src="{{photoX.img}}">
 				</a>
+				<div>
+					<div>
+						<label>Likes {{photoX.likes}}</label>
+						<button type="button" ng-click="photoX.likes = photoX.likes + 1">Like</button>
+					</div>
+					<div>
+						<label>Dislikes {{photoX.dislikes}}</label>
+						<button type="button" ng-click="photoX.dislikes = photoX.dislikes + 1">Dislike</button>
+					</div>
+				</div>
 				<ul class="list-group" ng-show="toggleComments">
 					<li class="list-group-item" ng-repeat="commentX in photoX.comments">{{commentX}}</li>
 					<li ng-hide="toggleAddComment">

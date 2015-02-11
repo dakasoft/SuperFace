@@ -25,17 +25,23 @@ app.controller('SuperController',function($scope){
                 {
                     img: 'img/batman.jpg',
                     description: '',
-                    comments: ['lindo', 'lindisimo']
+                    comments: ['lindo', 'lindisimo'],
+                    likes: 1,
+                    dislikes: 0
                 },
                 {
                     img: 'img/flash.jpg',
                     description: '',
-                    comments: ['feo', 'feisimo']
+                    comments: ['feo', 'feisimo'],
+                    likes: 0,
+                    dislikes: 0
                 },
                 {
                     img: 'img/linterna.jpg',
                     description: '',
-                    comments: ['asqueroso', 'noob']
+                    comments: ['asqueroso', 'noob'],
+                    likes: 0,
+                    dislikes: 0
                 }
             ]
         }
