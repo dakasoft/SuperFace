@@ -11,14 +11,15 @@
 	<div class="logInBox" ng-hide="bLoginValid">
 		<h1>Superface</h1>
 		<p>Log in</p>
-		<form role="form" method="post" action="" ng-submit="super.currentUser = super.users.superUser; bLoginValid = true" novalidate>
+		<form name="formLogin" role="form" method="post" action="" 
+		ng-submit="formLogin.$valid && super.validateLogin(newRequest)">
 			<div class="form-group">
 				<label class="sr-only" for="user">Username</label>
-				<input type="text" class="form-control" id="user" placeholder="Introduce tu usuario" required ng-model="inputUsername">
+				<input type="text" class="form-control" id="user" placeholder="Introduce tu usuario" required ng-model="newRequest.username">
 			</div>
 			<div class="form-group">
 				<label class="sr-only" for="pass">Password</label>
-				<input type="password" class="form-control" id="pass" placeholder="Contraseña" required ng-model="inputPassword">
+				<input type="password" class="form-control" id="pass" placeholder="Contraseña" required ng-model="newRequest.password">
 			</div>
 			<div class="checkbox">
 				<label>

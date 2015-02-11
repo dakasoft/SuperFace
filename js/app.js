@@ -14,7 +14,7 @@ app.controller('SuperController',function($scope){
     this.users = {
         superUser: {
             username: "superUser",
-            pass: "superPass",
+            password: "superPass",
             name: "Clark Kent",
             race: "Kriptoniano",
             home: "Tierra",
@@ -40,29 +40,28 @@ app.controller('SuperController',function($scope){
             ]
         }
     };
-    // Boolean de comprobacion de login?
-    // this.bLoginValid = false;
-    this.loginValidate = function () {
-        var potato = document.getElementById('user').value;
-        $scope.currentUser = $scope.users[potato];
+    // Funcion de comprobacion de login? att: LDMV
+    this.validateLogin = function (pNewRequest) {
+        var testPassword = '';
+        if (this.users[pNewRequest.username]) {
+            testPassword = this.users[pNewRequest.username].password;
+            if (pNewRequest.password === testPassword) {
+                this.currentUser = this.users[pNewRequest.username];
+                $scope.bLoginValid = true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
     }
     // Variable para acceder a la info de un usuario más facilmente att: LDMV
     this.currentUser = {};
-    // Ni idea si voy a usar esto XD
-    this.comment = "";
     
     this.addComentario =  function(pPhoto){
-    pPhoto.comments.push(this.comentario);
+        pPhoto.comments.push(this.comentario);
+        this.comentario = '';
     }
-    this.comentario = '';
-});
-
-//custom filter to slipt de books collection
-app.filter('startFrom', function() {
-    return function(input, start) {
-        start = +start; //parse to int
-        return input.slice(start);
-        }
 });
 
 app.controller("NewImgController",function(){
@@ -74,12 +73,4 @@ app.controller("NewImgController",function(){
     this.foto ={};
 });
 
-
-// app.controller("loginController",function($scope){
-//     this.logeado =false;
-//     this.yo = superman;
-// });
-
 })();
-
-
