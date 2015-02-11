@@ -142,12 +142,12 @@ legend{
   border-radius: 6px 6px 0 0;
   box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.25);
 
-   width: 80%;
+   width: 90%;
    height:40%;
 }
 .list-group{
 	border:1px solid white  ; opacity: 0.9;
-	 width: 80%;
+	 width: 90%;
 	 -webkit-border-radius:0 0 6px 6px ;
   -moz-border-radius:0 0 6px 6px;
   border-radius:0 0 6px 6px;
