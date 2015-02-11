@@ -24,22 +24,23 @@ app.controller('SuperController',function($scope){
             photos: [
                 {
                     img: 'img/batman.jpg',
-                    description: '',
-                    comments: ['lindo', 'lindisimo'],
+                    description: 'Aqui en gótica',
+                    comments: ['lindo', 'lindisimo', 'linda cuidad', 'cuidad gótica ya no es la misma de antes'
+					],
                     likes: 1,
                     dislikes: 0
                 },
                 {
                     img: 'img/flash.jpg',
                     description: '',
-                    comments: ['feo', 'feisimo'],
+                    comments: ['feo', 'feisimo', 'Tomaron esta foto con flash?'],
                     likes: 0,
                     dislikes: 0
                 },
                 {
                     img: 'img/linterna.jpg',
                     description: '',
-                    comments: ['asqueroso', 'noob'],
+                    comments: ['asqueroso', 'noob', 'Eres el peor superheroe', 'Donde conseguiste ese anillo'],
                     likes: 0,
                     dislikes: 0
                 }
